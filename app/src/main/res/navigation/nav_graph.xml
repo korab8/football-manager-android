@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/teamStandingsFragment"
+        android:name="com.korab.footballmanager.ui.standings.TeamStandingsFragment"
+        android:label="Team Standings"
+        tools:layout="@layout/fragment_team_standings">
+        <action
+            android:id="@+id/action_teamStandingsFragment_to_teamDetailsFragment"
+            app:destination="@id/teamDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/teamDetailsFragment"
+        android:name="com.korab.footballmanager.ui.details.TeamDetailsFragment"
+        android:label="Team Details"
+        tools:layout="@layout/fragment_team_details">
+        <argument
+            android:name="teamId"
+            app:argType="integer" />
+
+        <argument
+            android:name="index"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.korab.footballmanager.ui.start.StartFragment"
+        android:label="Football Manager"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_teamStandingsFragment"
+            app:destination="@id/teamStandingsFragment" />
+    </fragment>
+</navigation>

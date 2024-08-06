@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FootballManager</string>
+    <string name="team_logo">Team Logo</string>
+    <string name="hello_blank_fragment">Football Manager App</string>
+    <string name="simulating">Simulating…</string>
+    <string name="start">Start</string>
+    <string name="all_fixtures">All Fixtures</string>
+    <string name="points">Points: %1$s</string>
+    <string name="final_position">Final Position: %1$s</string>
+    <string name="goal_difference">Goal Difference: %1$s</string>
+    <string name="position">%1$s.</string>
+    <string name="simulate">Simulate</string>
+</resources>
